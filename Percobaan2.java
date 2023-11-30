@@ -11,6 +11,15 @@ public class Percobaan2 {
         } 
     }
 
+    static String cetak(int x, int y)
+    {
+        if (y == 0) {
+            return ("1");
+        } else {
+            return (x + "*" + cetak(x, y - 1));
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Bilangan yang dihitung: ");
@@ -18,7 +27,7 @@ public class Percobaan2 {
         System.out.print("Pangkat: ");
         int pangkat = sc.nextInt();
 
-        System.out.println(hitungPangkat(bilangan, pangkat));
+        System.out.println(cetak(bilangan, pangkat) + " = " + hitungPangkat(bilangan, pangkat));
     }
 
 }
