@@ -1,4 +1,4 @@
-public class Rekursif {
+public class Percobaan1 {
 
     static int faktorialRekrusif(int n)
     {
@@ -13,7 +13,7 @@ public class Rekursif {
     {
         int faktor = 1;
         for (int i = n; i >= 1; i--) {
-            faktor = faktor * 1;
+            faktor = faktor * i;
         }
         return faktor;
     }
